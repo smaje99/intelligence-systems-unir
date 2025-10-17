@@ -1,0 +1,43 @@
+# Archivos temporales de Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos compilados de Cython
+*.c
+*.so
+
+# Archivos de entorno virtual
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de configuración locales
+*.swp
+*.swo
+*.DS_Store
+*.idea/
+.vscode/
+
+# Datos grandes o temporales
+*.csv
+*.tsv
+*.log
+*.dat
+*.tmp
+*.bak
+*.h5
+*.pkl
+*.joblib
+
+# Salidas de Jupyter (si quieres ignorar por defecto los outputs pesados)
+*.nbconvert.ipynb
