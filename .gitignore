@@ -29,8 +29,6 @@ venv.bak/
 .vscode/
 
 # Datos grandes o temporales
-*.csv
-*.tsv
 *.log
 *.dat
 *.tmp
