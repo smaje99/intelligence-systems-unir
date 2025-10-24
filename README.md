@@ -1,5 +1,3 @@
-
-
 # 🧠 Sistemas Inteligentes (UNIR)
 
 Repositorio de ejercicios y actividades de la asignatura **Sistemas Inteligentes** de la Universidad Internacional de La Rioja (UNIR).
@@ -23,6 +21,6 @@ Aquí se recogen los **tests, trabajos y prácticas de laboratorio** organizados
 
 El repositorio sigue la programación semanal de la asignatura (2025), con materiales y ejercicios agrupados por semanas.
 
+## 💻 Clases
 
-
-
+* **Clase 2 (10-23/25):** Regresión Lineal
