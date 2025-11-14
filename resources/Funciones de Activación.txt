@@ -1,0 +1,67 @@
+CUERPO DEL PROGRAMA
+
+import matplotlib.pyplot as plt
+import numpy as np
+import tensorflow as tf
+ 
+ 
+def graficar_funcion_activacion(funcion):
+rango_x = np.arange(-10, 10, 0.1)
+salida = funcion(rango_x)
+plt.plot(rango_x, salida)
+plt.grid()
+
+
+SIGMOIDE
+def sigmoide(z):
+    ''' Activacion sigmoide '''
+    return 1 / (1 + np.exp(-z))
+ 
+sigmoide(np.arange(-10, 10, 0.1))
+
+SOFTMAX
+inputs = tf.random.normal(shape=(32, 10))
+tf.keras.activations.softmax(inputs)
+ 
+# Usando como capa
+tf.keras.layers.Dense(100, activation=tf.keras.activations.softmax)
+
+
+TANGENTE HIPERBÓLICA
+def tanh(z):
+    ''' Activacion tangente hiperbolica '''
+    return (np.exp(z) - np.exp(-z)) / (np.exp(z) + np.exp(-z))
+ 
+tanh(np.arange(-10, 10, 0.1))
+
+tf.keras.activations.tanh(np.arange(-10, 10, 0.1))
+ 
+# Usando como capa
+tf.keras.layers.Dense(100, activation=tf.keras.activations.tanh)
+
+RELU
+def relu(z):
+    ''' Activacion ReLU'''
+    return np.maximum(0, z)
+
+tf.keras.activations.relu(np.arange(-10, 10, 0.1))
+ 
+# Usando como capa
+tf.keras.layers.Dense(100, activation=tf.keras.activations.relu)
+ 
+ 
+relu(np.arange(-10, 10, 0.1))
+
+SWISH
+def swish(z):
+    ''' Activacion swish '''
+    return z / (1 + np.exp(-z))
+ 
+ 
+swish(np.arange(-10, 10, 0.1))
+
+ELU
+tf.keras.layers.ELU(0.3)(np.arange(-10, 10, 0.1))
+ 
+# Usando como capa
+tf.keras.layers.Dense(100, activation=tf.keras.layers.ELU(0.3))

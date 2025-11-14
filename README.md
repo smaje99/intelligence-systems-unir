@@ -24,3 +24,5 @@ El repositorio sigue la programación semanal de la asignatura (2025), con mater
 ## 💻 Clases
 
 * **Clase 2 (10-23/25):** Regresión Lineal
+* **Clase 3 (10-30/25):** Árboles de Decisión
+* **Clase 5 (11-13/25):** Redes Neuronales Artificaciones
